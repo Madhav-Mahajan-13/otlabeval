@@ -4,9 +4,9 @@ clc
 clear all
 format short
 Noofvariables=2;
-C=[];
-a=[]
-b=[]
+C=[];%obj function coeff
+a=[]; %coeff of constraints excluding slack
+b=[];
 s=eye(size(a,1))
 A=[a s b]
 cost=zeros(1,size(A,2))
